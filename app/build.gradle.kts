@@ -51,9 +51,15 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation("androidx.compose.ui:ui:1.7.6")             // Compose UI
     implementation("androidx.compose.ui:ui-tooling:1.7.6")     // Tooling cho Preview
-    implementation("androidx.compose.ui:ui-tooling-preview:1.7.6")
+    implementation(libs.ui.tooling.preview)
     implementation(libs.androidx.foundation.layout.android)
-    implementation(libs.androidx.foundation.layout.android) // Preview API
+    implementation(libs.androidx.foundation.layout.android)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.junit.junit) // Preview API
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -61,4 +67,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("io.coil-kt:coil-compose:2.4.0")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0")
 }
